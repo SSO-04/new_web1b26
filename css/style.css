@@ -4,10 +4,75 @@ body {
   background-color: #fffcf7;
   font-family: 'notosans';
   text-align: center;
+  
 }
 
+header {
+  width: 1240px;
+  margin: 0 auto 10px;
+}
 
-h1 {
+header h1 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid #8b337f;
+  border-bottom: 2px solid #8b337f;
+  background-color: rgba(248, 0, 157, 0.42);
+  padding: 12px 0px 10px;
+}
+header nav ul li {
+  margin: 0 20px;
+}
+header nav ul li a {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+header nav ul li a:hover {
+  text-decoration: underline double;
+}
+
+div {
+  width: 1240px;
+  margin: 0 auto 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  flex-basis: 920px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 20px 72px 32px 72px;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.16);
+}
+aside {
+  flex-basis: 284px;
+}
+aside nav {
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.16);
+  padding: 24px 28px;
+  margin-bottom: 24px;
+}
+aside nav h2 {
+  margin-bottom: 18px;
+  font-size: 22px;
+  font-weight: bold;
+}
+aside nav ul {
+  font-size: 14px;
+}
+
+main h1 {
   font-size: 18px;
   background-color: rgb(253, 232, 247);
   padding: 10px;
@@ -16,7 +81,7 @@ h1 {
   color: #8b337f;
 }
 
-h2{
+article h2{
   font-size: 18px;
   color: #fff;
   background-color: rgb(248, 149, 205);
@@ -28,7 +93,7 @@ h2{
   text-align: center;
   margin: auto;
   margin-bottom: 10px;
-  margin-top: 50px;
+  margin-top: 10px;
   font-weight: bold;
 }
 
@@ -65,21 +130,40 @@ p{
   margin-bottom: 50px;
 }
 
-img {
+main img {
   border-radius: 50%;
   margin-bottom: 10px;
   border: 5px solid #ffcfff;
 }
 
-li {
-    background-color: #fff7fe;
+aside h1 img {
+  max-width: 100%;
+  height: auto;
   display: block;
-  width: 400px;
-  padding: 20px 0;
-  border-radius: 10px;
-  color: #a41b88;
-  font-weight: bold;
-    margin: auto;
-  margin-bottom: 20px;
-  border: 3px solid #efbce8;
+  margin: 0 auto;
+  border-radius: 0;      /* main img에 들어간 50% 효과 방지 */
+  border: none;
 }
+
+.searchNav ul li {
+  border-bottom: 1px solid #ffb0e7;
+  padding-bottom: 10px;
+  margin-bottom: 22px;
+}
+
+article section p {
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+article section {
+  margin-bottom: 50px;
+}
+
+footer {
+  width: 100%;
+  background-color: #ffe3ff;
+  color: #4e1853;
+  text-align: center;
+  padding: 14px 10px 20px;
+}
+
