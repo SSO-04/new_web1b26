@@ -4,6 +4,21 @@ body {
   background-color: #bbf1ef;
   font-family: 'Verdana','Apple SD Gothic Neo','NanumGothic',sans-serif;
 }
+
+header {
+  width: 1240px;
+  margin: 0 auto 44px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid #7c5d48;
+  border-bottom: 2px solid #7c5d48;
+  background-color: rgba(255,255,255,0.42);
+  padding: 12px 0px 10px;
+}
+
 h1 {
   font-size: 18px;
   border: 3px solid #ffffff;
